@@ -1,0 +1,405 @@
+@import url("forms.css");
+@import url("table.css");
+
+/* 
+	============================
+	Page
+	============================
+*/
+
+/* fonts */
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-CondLight.ttf);
+}
+
+@font-face {
+  font-family: NewsCycle;
+  src: url(../fonts/NewsCycle-Regular.ttf);
+}
+
+/* ----------- */
+
+html {
+	background-color: #000000;
+	overflow-y: scroll; 
+}
+
+body {
+	font-family: NewsCycle,Arial,sans-serif;
+	color: #d0d0d0;
+	margin: 0 0 0 0;
+}
+
+body a{
+	color: #999999;
+	text-decoration:none;
+}
+
+body a:hover{
+	color: #ffffff;
+	text-decoration:underline;
+}
+
+h1 {
+    border-bottom: 2px solid #2C2C2C;
+    font-family: OpenSans,sans-serif;
+    font-size: 30px;
+}
+
+div#content {
+	background: #151515;
+}
+
+body hr {
+    border-style: dashed;
+    color: #151515;
+}
+
+.right{
+	float:right;
+}
+.nomargin{
+	margin: 0 0 0 0;
+}
+
+.scale {
+	width:900px;
+	margin: 0 auto 0 auto;
+	min-width:900px;
+}
+
+.banner-width {
+	width: 100%;
+    max-width: 1600px;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.pos-absolute {
+	position: absolute;
+}
+
+.fill {
+	width: 100%;
+}
+
+/* 
+	============================
+	Article
+	============================
+*/
+div#wrapper {
+	margin: 25px auto 25px auto;
+	background: #383838;
+	overflow: auto;
+	padding-bottom: 15px;
+}
+
+article.page-article {
+	margin: 15px;
+}
+
+section.article-section {
+	overflow: auto;
+}
+
+header.article-header {
+
+}
+
+aside.article-aside {
+	float:left;
+	margin-right: 20px;
+	background-color: #000000;
+}
+
+figure.article-fig {
+	display:inline-block;
+	font-size: 10pt;
+    font-style: italic;
+    margin: 15px 30px;
+    margin: 10px;
+    text-align: center;
+}
+	
+nav#side-menu {
+	margin:10px;
+}
+
+.input-area {
+	width:100%;
+	max-width:530px;
+}
+
+/* 
+	============================
+	Game List
+	============================
+*/
+	
+section.projects-section {
+	overflow: auto;
+	border-style: dashed;
+	/*width: 800px;*/
+	margin: auto;
+}
+
+section.projects-section h1{
+    border-bottom: 2px solid #2C2C2C;
+    font-family: OpenSans,sans-serif;
+    font-size: 17pt;
+	margin: 1px;
+	margin-bottom: 5px;
+}
+
+section.projects-section h2{
+    border-bottom: 2px solid #2C2C2C;
+    font-family: OpenSans,sans-serif;
+    font-size: 12pt;
+	margin: 1px;
+}
+
+section.projectitem-section {
+	background: rgba(0,0,0,0.7);
+	margin-bottom: 40px;
+	/*height: 250px;*/
+	position: relative;
+	overflow: hidden;
+}
+
+div.projectitem-body {
+	/*display: flex;*/
+	border: 1px;
+	/*height: 100px;*/
+}
+	
+figure.projectitem-fig {
+	/*width: 300px;
+	height: 250px;
+	background: darkblue;
+	font-size: 10pt;
+    font-style: italic;*/
+    margin: 0px;
+	padding: 0px;
+    text-align: center;
+	overflow: hidden;
+}
+
+
+
+div.projectitem-column {
+	/*flex: 1;
+	background: rgba(0,0,0,0.9);*/
+	font-size: 10pt;
+	margin: 0px;
+	padding-top: 3px;
+	padding-left: 3px;
+	/*position: absolute; */
+	bottom: 0px; 
+	left: 0; 
+}
+
+div.projectitem-column p {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+div.project-column {
+	float: left;
+	width: 48%;
+	display: block;
+}
+
+div.games-column {
+	float: right;
+	width: 48%;
+	display: block;
+}
+	
+/* 
+	============================
+	Footer
+	============================
+*/
+
+footer{
+	font-size: 10pt;
+	font-style:italic;
+	background-color: #000000;
+}
+
+footer.byline {
+	clear:both;
+	overflow:auto;
+}
+
+footer#bottom {
+
+}
+
+footer#bottom a {
+	padding-right: 5px;
+}
+footer#bottom a:link		{}
+footer#bottom a:visited 	{}
+footer#bottom a:hover 		{}
+footer#bottom a:active		{}
+
+	
+/* 
+	============================
+	Html5-elements
+	============================
+*/	
+header,footer,nav,article,section,aside,figure,figcaption{display:block;}
+	
+/* 
+	============================
+	Header
+	============================
+*/
+
+header.page-header {
+	position:relative;
+}
+
+header#above-header {
+	background: #000000;
+	color: #ffffff;
+}
+header#above-header a {
+	padding: 10px;
+}
+
+header#main-header {
+	width:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Different images based on category */
+body#me header#main-header,
+body#login header#main-header {
+	background-image: url(../images/banner_img_me.png);
+}
+body#report header#main-header {
+	background-image: url(../images/banner_img_report.png);
+}
+
+body#php header#main-header {
+	background-image: url(../images/banner_img_php.png);
+}
+
+body#style header#main-header {
+	background-image: url(../images/banner_img_css.png);
+}
+
+body#source header#main-header {
+	background-image: url(../images/banner_img_src.png);
+}
+
+.main-header-height {
+	height:300px;
+}
+	
+div#banner {	
+	width:100%;
+	background-color: transparent;
+	/* Gradient generated using  http://www.colorzilla.com/gradient-editor */
+	/* IE9 SVG */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iOTglIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=); /* OMG! */
+	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 2%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 98%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(2%,rgba(0,0,0,1)), color-stop(10%,rgba(0,0,0,0)), color-stop(90%,rgba(0,0,0,0)), color-stop(98%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 2%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 90%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 2%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 90%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 2%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 90%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 2%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 90%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* W3C */
+	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );*/ /* IE6-8 */
+	/* -------------------------- */
+	/* Uff, CSS3 behöver nog lite mer tid... */
+
+}
+
+
+
+header.img#logo {
+
+}
+
+div#header-overlay {
+	position: absolute;
+	bottom: 0;
+}
+
+img#logo {
+	position: relative;
+}
+
+nav.login {
+    display: inline;
+    float: right;
+}
+
+/* 
+	============================
+	Navigation
+	============================
+*/
+
+nav.navmenu {
+	position: absolute;
+	right:0px;
+	bottom:0px;
+	display: block;
+	background-color: #000000;
+	background-color: rgba(0,0,0,0.7);
+	height: 50px;
+}
+	
+nav.navmenu a { 
+    color: #CACACA;
+    display: inline-block;
+    font-family: OpenSans,Arial,sans-serif;
+    font-size: 15pt;
+    margin: 12px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1.5px 0 0 #000000;
+    width: 50px;
+}
+
+/* Menu selection highlight */
+body#me a#me-:after,
+body#report a#report-:after,
+body#php a#php-:after,
+body#ebaj a#ebaj-:after,
+body#style a#style-:after,
+body#source a#source-:after {
+	/* Create a triangle pointing
+	   from article to button 
+	   (exploits the way borders are rendered)*/
+    border-color: #383838 transparent;
+    border-style: solid;
+    border-width: 0 15px 15px;
+    bottom: auto;
+    content: "";
+    display: block;
+    left: 10px;
+    position: absolute;
+    top: 48px;
+    width: 0;
+}
+	
+nav.navmenu a:link		{}
+nav.navmenu a:visited 	{}
+nav.navmenu a:hover { 
+	color: #ffffff; 
+	/* background: #999999; */
+	text-shadow: 0px -2px 8px #F4FFDE;
+	border-top: 2px;	
+}
+nav.navmenu a:active	{}
+		

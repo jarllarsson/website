@@ -1,0 +1,204 @@
+/* fonts */
+@font-face {
+  font-family: pixel;
+  src: url(../fonts/pixel.ttf);
+}
+
+
+
+/* 
+  ============================
+	Page
+	============================
+*/
+
+
+html {
+    background-color: #9BBC0F;
+    overflow-y: scroll;
+}
+body {
+    border: 2px solid #0F380F;
+    color: #0F380F;
+    font-family: pixel,Arial;
+    font-size: 8pt;
+    margin: auto;
+    overflow: auto;
+    width: 260px;
+}
+body a {
+    background-color: #0F380F;
+    color: #9BBC0F;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+body a:hover {
+    background-color: #9BBC0F;
+    color: #0F380F;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+figure {
+    float: right;
+    margin: 8px;
+    max-width: 70px;
+    text-align: center;
+}
+hr {
+    border: 2px dotted;
+    color: #0F380F;
+}
+figure img,
+output img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+input.pass {
+	font-family:arial;
+}
+
+fieldset {
+	border: 2px solid #0F380F;
+}
+
+/* 
+	============================
+	Article
+	============================
+*/
+
+.page-article {
+	padding:15px;
+}
+
+nav#side-menu {
+	padding:0;
+}
+
+nav#side-menu h4{
+	margin-bottom: 0;
+    margin-top: 10px;
+}
+
+nav#side-menu ul,
+nav#side-menu ul li ul{
+	padding-left:0;
+}
+
+nav#side-menu ul li,
+nav#side-menu ul li ul li{
+	list-style-type: none;
+}
+
+
+nav#side-menu a{
+    display: block;
+    width: 100%;
+}
+
+select {
+    background-color: #0F380F;
+    border: none;
+    color: #9BBC0F;
+	width:100%;
+	font-family:inherit;
+	font-size:inherit;
+}
+
+input {
+    background-color: #0F380F;
+    border: none;
+    color: #9BBC0F;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.input-area {
+	border: 2px solid #000000;
+	max-width: 200px;
+	font-family: inherit;
+    font-size: inherit;
+}
+
+/* 
+	============================
+	Footer
+	============================
+*/
+footer {
+    float: left;
+    margin-left: 15px;
+    width: 116px;
+}
+footer#bottom {
+    overflow: auto;
+    width: 100px;
+}
+footer#bottom p {
+    float: left;
+}
+footer#bottom a {
+    display: block;
+    width: 100px;
+}
+	
+/* 
+	============================
+	Html5-elements
+	============================
+*/	
+header,footer,nav,article,section,aside,figure,figcaption{display:block;}
+	
+/* 
+	============================
+	Header
+	============================
+*/
+
+
+header#above-header {
+    background-color: #0F380F;
+    display: block;
+    float: left;
+    font-size: 6.8pt;
+    height: 65px;
+}
+header#above-header a {
+    display: block;
+    width: 50px;
+}
+img#logo {
+    background-color: #0F380F;
+    height: 65px;
+    width: 210px;
+}
+
+/* 
+	============================
+	Navigation
+	============================
+*/
+
+nav.navmenu {
+
+}
+	
+nav.navmenu a { 
+  border:2px solid #9BBC0F;
+  outline:2px solid #0F380F;
+}
+
+/* Menu selection highlight */
+body#me a#me-,
+body#report a#report-,
+body#php a#php-,
+body#style a#style-,
+body#source a#source- {
+	color:#0F380F;
+  background-color:#9BBC0F;
+  border:2px solid;
+  border-color:#0F380F;
+}
+
+		

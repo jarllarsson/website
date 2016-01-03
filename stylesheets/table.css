@@ -1,0 +1,36 @@
+table.table-body {
+	border-collapse: collapse;
+ }
+table.table-body th {
+	background: #000000;
+	text-align:left;
+}
+table.table-body th:nth-child(0) {
+	max-width:50px;
+}
+table.table-body tr {
+	background: #636363;
+	height: 80px;
+}
+table.table-body tr:nth-child(odd) {
+	background: #363636;
+}
+
+table.table-body tr:nth-child(1) {
+	height: 50px;
+}
+
+table.table-body td {
+	word-wrap: break-word;	
+}
+
+table.table-body th,
+table.table-body td {
+	padding: 10px;
+	vertical-align: top;
+}
+
+table td.td-body  {
+	width: 100%;
+	max-width: 520px;
+}

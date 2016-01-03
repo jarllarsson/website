@@ -1,0 +1,434 @@
+ï»¿
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<meta charset="utf-8">
+		<title>Min Me-sida om mig sjÃ¤lv</title>
+		<link rel="shortcut icon" href="images/favicon_glider.ico">
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!-- links to external stylesheets -->
+		<link type="text/css" rel="stylesheet" href="stylesheets/stylesheet.css" title="General stylesheet"> 
+		<link type="text/css" rel="alternate stylesheet" href="stylesheets/old_stylesheet.css" title="Ye olde stylesheet">
+		<!-- PHP conditional that adds a page-defined stylesheet if defined -->
+	</head>
+	
+	<!-- Body id dependant on selected page -->
+	<body  id='me' >
+	
+		<!-- Above header
+		<header id="above-header" class="scale banner-width page-header">		   
+		  <nav class='login'><a href='login.php?page=login'>login</a> </nav>
+		  <nav class="related">
+			<a href="../kmom01/me.php">kmom01</a>
+			<a href="../kmom02/me.php">kmom02</a>
+			<a href="../kmom03/me.php">kmom03</a>
+			<a href="../kmom04/me.php">kmom04</a>
+			<a href="../kmom05/me.php">kmom05</a>
+			<a href="me.php">kmom06</a>
+		  </nav>
+		</header> -->
+		
+		<!-- Header 
+		<header id="main-header" class="scale banner-width main-header-height page-header">
+			<div id="banner" class="scale banner-width main-header-height" >
+			</div>
+
+			<div class="scale">
+				<div class="scale" id="header-overlay">
+					<img id="logo" src="images/logo.png" alt="htmlphp logo" width=318 height=97>
+
+					<nav class="navmenu">
+						<a id="me-" 	href="me.php">Me</a>
+						<a id="report-" href="report.php">Report</a>
+						<a id="php-" 	href="test.php">PHP</a>
+						<a id="ebaj-" 	href="eBaj2.php">eBaj</a>
+						<a id="style-" 	href="style.php">Style</a>
+						<a id="source-" href="viewsource.php">Source</a>
+					</nav>	
+				</div>
+			</div>
+		</header>-->
+
+
+	<!-- Main content -->
+	<div id="content">
+		<!-- Article wrapper -->
+		<div class="scale" id="wrapper">	
+			<!-- Article -->
+			<article class="page-article">
+				<!-- Article header -->
+				<header class="article-header">
+					<h1>Om mig</h1>
+				</header>
+				
+				<!--<aside class="article-aside">
+					<figure class="article-fig" id="f1">
+						<img src="images/me.jpg" alt="Bild på Jarl Larsson">
+						<figcaption>En person i behov av kaffe.</figcaption>
+					</figure>
+				</aside>-->
+				<div class="article-column">
+					<p>My name is Jarl Larsson and I like to make video games, and stuff like that.</p>
+					<p>I recently finished my Master of Engineering in Game- and Software Engineering and I'm currently employed as a programmer at Image & Form, were we create (only) awesome games for almost every platform imaginable.</p>
+					<p>On this site you'll find some of my personal and academic projects, enjoy!</p>
+				</div>
+				
+				<section id="videos-section" class="videos-section">
+					<header>
+						<h2>Video Reel</h2>
+					</header>
+					<iframe width="870" height="489" src="https://www.youtube.com/embed/gLzcyWSxTnE?list=PLI8xkPPG20mdyaLiMmyQwYTZPNKZSPAP1&showinfo=1" frameborder="0" allowfullscreen></iframe>
+				</section>
+				
+				<section id="projects-section" class="projects-section">
+				<div class="project-column">
+					<header>
+						<h1>Academic- & Personal Projects</h1>
+					</header>
+				
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Master's Thesis (2014-2015)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=https://camo.githubusercontent.com/2dd394381ac548222610fdac175ab5fa29acfd55/687474703a2f2f696d672e796f75747562652e636f6d2f76692f544d4d59427170714533512f687164656661756c742e6a7067 alt="Walkers">
+							</figure>
+							<div class="projectitem-column">
+								<p>My master's thesis on physically driven procedural locomotion of bipeds and quadrupeds.</p>
+								<p>The work consists on the implementation of an algorithm for procedural locomotion and the evaluation of its realtime performance.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>GPGPU Raytracer & Raymarcher (2013-2014)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/frac6-300x100.png alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>My GPGPU realtime raytracer+raymarcher uses a CUDA kernel to concurrently process rays for each pixel being rendered.</p>
+								<p>The application implements DirectX 11 interoperability with CUDA. The application is able to render textured meshes, geometric primitives and 3d fractals in real time.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Undo-trees (2013)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://media.indiedb.com/cache/images/games/1/20/19724/thumb_620x2000/brewery2.png alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>I developed an undo-tree solution for a level editor made together with 3 other students.</p>
+								<p>Undo-trees are awesome as they let you treat internal command history within an editing app more like a version control system with branches.</p>
+								<p>Unlike stack-based undo systems, you don't lose your history when making changes after having done a few undos.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Amalgamation Game Engine (2013)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/ClientApp_x86_Release-2013-03-27-16-44-43-79-300x100.png alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>Amalgamation is a 3d game engine and a multiplayer spaceship dogfighting game. Built from scratch together with 7 other students in 6 months using C++ and DirectX 11.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Vodi - Platformer with Multithreaded Marching Cubes Terrain (2013-Ongoing)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/BKvBaXACAAE2pKS-460x350.png alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>Vodi is an experimental platformer with malleable terrain and planetoid gravity.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>The Little Cheese Boy (2013)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/cheeseburg-300x100.png alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>A charming Pac-Man homage made together with 5 other students. Developed with cross-platform in mind and is currently playable on Windows, OSX and Linux.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Animats Potential Field Pathfinding (2012)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/animats-300x100.png alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>An experiment with simplified virtual lifeforms that pathfind based on positive and negative fields and some simple rules.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Io - 3d Puzzle Platformer with Isosurfaces (2012)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/io_site_header-300x100.jpg alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>In Io you are tasked with solving puzzles using digital clay.</p>
+								<p>The player can add or subtract clay in certain volumes of space.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>SoulHunter - 3d Hack- and Slash Adventure Game (2005-2011)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/image4_boss_battle-300x100.png alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>SoulHunter is a 3d adventure game with sword-based hack- and slash combat. The main protagonist of the game, is kind of an anti-hero, a wretched creature that has lost its own soul.</p>
+								<p>To survive, it has to consume the weak souls of the monsters inhabiting the large forest in which the game takes place.</p>
+							</div>
+						</div>
+					</section>	
+
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Hyperion - Platformer with Level Editor (2010)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/6-300x100.jpg alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>A simple platformer developed in C++ using SDL for Windows and the handheld GP2X.</p>
+								<p>Includes a tile-based level editor</p>
+							</div>
+						</div>
+					</section>
+
+				</div>
+					
+				<div class="games-column">
+					<header>
+						<h1>Game Jams</h1>
+					</header>
+					
+					<section class="projectitem-section">
+						<header>
+							<h2>Monstrous (2015)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/6d881b20bae2e9ffede8e4202d8d7850.jpg alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>Not much of a game, but more like a small experiment. Monstrous is a Black & White inspired little monster simulator. </p>
+							</div>
+						</div>
+					</section>
+					
+					<section class="projectitem-section">
+						<header>
+							<h2>Up & Away! (2015)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/fe5a96d7ffbe7c2adfea83376ccaf25b.jpg alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>Guide the little monster to the top of the tree.</p>
+								<p>Classic 3d platformer, inspired by the N64- and PSX era</p>
+							</div>
+						</div>
+					</section>
+					
+					<section class="projectitem-section">
+						<header>
+							<h2>Arms Race (2015)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://ludumdare.com/compo/wp-content/uploads/2015/04/carperson-300x159.png alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>Unfinished kart racer, with 4-seat multiplayer and single player modes.</p>
+								<p>Players are able to slap eachother around the track using giant hands!</p>
+							</div>
+						</div>
+					</section>
+					
+					<section class="projectitem-section">
+						<header>
+							<h2>Super Baby Seal Revenge (2015)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/3f123debda2d39e07eaf06f036987117.jpg alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>The roles are reversed in this game, where you, as a baby seal, go on a rampage and club down some nasty seal clubbers!</p>
+								<p>Get the spiky ball rolling and club down the approaching enemies.</p>
+							</div>
+						</div>
+					</section>
+					
+					<section class="projectitem-section">
+						<header>
+							<h2>The Gorghast (2014-Ongoing)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://ludumdare.com/compo/wp-content/compo2//394584/11939-shot0.png-eq-900-500.jpg alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>The horrible Gorghast is decimating the population, and you have to help it! >:D</p>
+								<p>Move the Gorghast around by dragging its feet, one by one. Eat and maim people to rack up your score and keep the combo going.</p>
+								<p>Infinite semi-procedural levels, choose whether to journey to the left or right.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Omnis (2014)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/870b7d32d9740068e14a186e9c3a708a.jpg alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>A reversed god-sim? Destroy the evil deity by hindering its worshippers to pray to it. Only by severing their connection to it may you succeed.</p>
+								<p>Plays somewhat like classic top-down Zelda games.</p>
+							</div>
+						</div>
+					</section>
+					
+					<section class="projectitem-section">
+						<header>
+							<h2>Apotheosis (2013)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/6794d35b9a57a70bc65fbf3558715c69.jpg alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>Combine Mario Bros and Braid and this is what you get.</p>
+								<p>Use your time-rewinding ability to save the precious artifact from the vicious critters.</p>
+							</div>
+						</div>
+					</section>
+					
+					<section class="projectitem-section">
+						<header>
+							<h2>Amongst The Uncommon (2013)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2014/04/screen7_0-e1404857960757-300x100.jpg alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>Paintball-shooting robot shamans come together to play some hardcore paintball. Use the awesome power of paintballs to convert the creatures of the world to your side, and use them to crush your opponents.</p>
+							</div>
+						</div>
+					</section>
+					
+					<section class="projectitem-section">
+						<header>
+							<h2>The Tiny Gryphalope (2012)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2014/04/vlcsnap-2012-07-04-14h46m13s127-e1405043126905-300x100.png alt="Fractal">
+							</figure>
+							<div class="projectitem-column">
+								<p>This game marks my Ludum Dare debut! It is a take on shoot-â€™em-ups such as Space Harrier and Panzer Dragoon.</p>
+								<p>The game was developed in 48 hours and it managed to crawl its way up to 5th place in the graphics category.</p>
+							</div>
+						</div>
+					</section>
+				
+				</div>
+
+				</section>
+				
+			</article>
+			<!-- End of article -->
+			
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="scale byline">
+		<hr />	
+		<figure class="right top">
+			<img src="images/orangutan.jpg" alt="Orangutang med monokel och hatt">
+		</figure>
+		<p>Jarl Larsson studerar till civilingenjör inom spel- och programvaruteknik på BTH.<br /> Huvudintresserna är programmering, modellering, animation och målning.</p>
+	</footer>
+	<footer id="bottom" class="scale">
+		<hr />
+		<p>Verktyg:
+			<a href="http://validator.w3.org/check/referer">HTML5</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS3</a>
+			<a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a>
+			<a href="http://validator.w3.org/i18n-checker/check?uri=http://bytegrove.com/bth/kmom06/me.php">i18n</a>
+			<a href="http://validator.w3.org/checklink?uri=http://bytegrove.com/bth/kmom06/me.php">Links</a>
+			<a href="viewsource.php">Källkod</a>
+		</p>
+		<p>Manualer:
+			<a href="http://www.w3.org/2009/cheatsheet/">Cheatsheet</a>
+			<a href="http://dev.w3.org/html5/spec/spec.html">HTML5</a> 
+			<a href="http://www.w3.org/TR/CSS2/">CSS2</a> 
+			<a href="http://www.w3.org/Style/CSS/current-work#CSS3">CSS3</a> 
+			<a href="http://php.net/manual/en/index.php">PHP</a> 
+		</p>
+		<p>Sidan genererades på 0.00965 sekunder</p>
+	</footer>
+
+</body>
+</html>
+

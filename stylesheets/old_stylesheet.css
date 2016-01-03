@@ -1,0 +1,102 @@
+/* 
+	============================
+	Page
+	============================
+*/
+
+html {background: #cc6666;}
+
+body {
+	margin: 8px auto;
+	width: 934px;
+	padding: 8px;
+	background: #ffffcc;
+	border: 1px dashed #000000;
+	font-family: Georgia, serif;
+	color: #333333;
+	}
+
+body a{
+	color: #000000;
+	text-decoration:underline;
+}
+
+body a:hover{
+	color: #5C616B;
+}
+
+h1 {
+	text-transform: uppercase;
+	border-bottom: 4px double #333333;
+	}
+	
+/* 
+	============================
+	Article
+	============================
+*/
+	
+	
+/* 
+	============================
+	Footer
+	============================
+*/
+
+div#footer a {
+	font: italic 0.8em Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #999999;
+	}
+div#footer a:link		{}
+div#footer a:visited 	{}
+div#footer a:hover 		{text-decoration:underline; color: #333333;}
+div#footer a:active		{}
+
+img.alignedright{
+	float:right;
+	margin: 0px 2px 0px 2px;
+	}
+	
+/* 
+	============================
+	Html5-elements
+	============================
+*/	
+header,footer,nav,article,section,aside,figure,figcaption{display:block;}
+	
+/* 
+	============================
+	Header
+	============================
+*/
+
+div#top {}
+
+
+
+/* 
+	============================
+	Navigation
+	============================
+*/
+
+nav.navmenu {
+	display: block;
+	padding: 0.2em 1em 0 1em;
+	background: #ffcc99;
+	border-bottom: 2px solid #999999;
+	}
+	
+nav.navmenu a {
+	padding: 0.3em 1em 0 1em;
+	color: #555555;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration:none;
+	}
+	
+nav.navmenu a:link		{}
+nav.navmenu a:visited 	{}
+nav.navmenu a:hover 	{ color: #111111; background: #999999; }
+nav.navmenu a:active	{}
+		
