@@ -21,7 +21,7 @@
 /* ----------- */
 
 html {
-	background-color: #000000;
+	background-color: #ffffff;
 	overflow-y: scroll; 
 }
 
@@ -48,7 +48,7 @@ h1 {
 }
 
 div#content {
-	background: #151515;
+	background: #fdfdfd;
 }
 
 body hr {
@@ -92,8 +92,8 @@ body hr {
 	============================
 */
 div#wrapper {
-	margin: 25px auto 25px auto;
-	background: #383838;
+	margin: 0px auto 25px auto;
+	/*background: #383838;*/
 	overflow: auto;
 	padding-bottom: 15px;
 }
@@ -134,6 +134,16 @@ nav#side-menu {
 	max-width:530px;
 }
 
+section.intro-section {
+	/*background: black;*/
+}
+
+section.videos-section {
+	width: 700px;
+	margin: auto;
+	/*background: black;*/
+}
+
 /* 
 	============================
 	Game List
@@ -142,9 +152,11 @@ nav#side-menu {
 	
 section.projects-section {
 	overflow: auto;
-	border-style: dashed;
-	/*width: 800px;*/
+	/*border-style: dashed;*/
+	width: 700px;
 	margin: auto;
+	margin-top: 40px;
+	/*background: black;*/
 }
 
 section.projects-section h1{
@@ -165,6 +177,7 @@ section.projects-section h2{
 section.projectitem-section {
 	background: rgba(0,0,0,0.7);
 	margin-bottom: 40px;
+	width: 300px;
 	/*height: 250px;*/
 	position: relative;
 	overflow: hidden;
@@ -209,13 +222,13 @@ div.projectitem-column p {
 
 div.project-column {
 	float: left;
-	width: 48%;
+	width: 300px;
 	display: block;
 }
 
 div.games-column {
 	float: right;
-	width: 48%;
+	width: 300px;
 	display: block;
 }
 	

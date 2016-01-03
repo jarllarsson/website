@@ -59,28 +59,31 @@
 		<div class="scale" id="wrapper">	
 			<!-- Article -->
 			<article class="page-article">
-				<!-- Article header -->
-				<header class="article-header">
-					<h1>Om mig</h1>
-				</header>
-				
-				<!--<aside class="article-aside">
-					<figure class="article-fig" id="f1">
-						<img src="images/me.jpg" alt="Bild på Jarl Larsson">
-						<figcaption>En person i behov av kaffe.</figcaption>
-					</figure>
-				</aside>-->
-				<div class="article-column">
-					<p>My name is Jarl Larsson and I like to make video games, and stuff like that.</p>
-					<p>I recently finished my Master of Engineering in Game- and Software Engineering and I'm currently employed as a programmer at Image & Form, were we create (only) awesome games for almost every platform imaginable.</p>
-					<p>On this site you'll find some of my personal and academic projects, enjoy!</p>
-				</div>
-				
-				<section id="videos-section" class="videos-section">
-					<header>
-						<h2>Video Reel</h2>
+			
+				<section id="intro-body" class="intro-section">
+					<!-- Article header -->
+					<header class="article-header">
+						<h1>Om mig</h1>
 					</header>
-					<iframe width="870" height="489" src="https://www.youtube.com/embed/gLzcyWSxTnE?list=PLI8xkPPG20mdyaLiMmyQwYTZPNKZSPAP1&showinfo=1" frameborder="0" allowfullscreen></iframe>
+					
+					<!--<aside class="article-aside">
+						<figure class="article-fig" id="f1">
+							<img src="images/me.jpg" alt="Bild på Jarl Larsson">
+							<figcaption>En person i behov av kaffe.</figcaption>
+						</figure>
+					</aside>-->
+					<div class="article-column">
+						<p>My name is Jarl Larsson and I like to make video games, and stuff like that.</p>
+						<p>I recently finished my Master of Engineering in Game- and Software Engineering and I'm currently employed as a programmer at Image & Form, were we create (only) awesome games for almost every platform imaginable.</p>
+						<p>On this site you'll find some of my personal and academic projects, enjoy!</p>
+					</div>
+					
+					<section id="videos-section" class="videos-section">
+						<header>
+							<h2>Video Reel</h2>
+						</header>
+						<iframe width="700" height="394" src="https://www.youtube.com/embed/gLzcyWSxTnE?list=PLI8xkPPG20mdyaLiMmyQwYTZPNKZSPAP1&showinfo=1" frameborder="0" allowfullscreen></iframe>
+					</section>		
 				</section>
 				
 				<section id="projects-section" class="projects-section">
@@ -96,7 +99,7 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=https://camo.githubusercontent.com/2dd394381ac548222610fdac175ab5fa29acfd55/687474703a2f2f696d672e796f75747562652e636f6d2f76692f544d4d59427170714533512f687164656661756c742e6a7067 alt="Walkers">
+								<img src="images/masterthesis_thumb.jpg" alt="Walkers">
 							</figure>
 							<div class="projectitem-column">
 								<p>My master's thesis on physically driven procedural locomotion of bipeds and quadrupeds.</p>
@@ -112,7 +115,7 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/frac6-300x100.png alt="Fractal">
+								<img src="images/fractal_thumb2.jpg" alt="Fractal">
 							</figure>
 							<div class="projectitem-column">
 								<p>My GPGPU realtime raytracer+raymarcher uses a CUDA kernel to concurrently process rays for each pixel being rendered.</p>
@@ -128,27 +131,12 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://media.indiedb.com/cache/images/games/1/20/19724/thumb_620x2000/brewery2.png alt="Amalgamation">
+								<img src="images/undo_thumb.jpg" alt="Undo-trees">
 							</figure>
 							<div class="projectitem-column">
 								<p>I developed an undo-tree solution for a level editor made together with 3 other students.</p>
 								<p>Undo-trees are awesome as they let you treat internal command history within an editing app more like a version control system with branches.</p>
 								<p>Unlike stack-based undo systems, you don't lose your history when making changes after having done a few undos.</p>
-							</div>
-						</div>
-					</section>
-					
-					<!-- Section -->
-					<section class="projectitem-section">
-						<header>
-							<h2>Amalgamation Game Engine (2013)</h2>
-						</header>
-						<div class="projectitem-body">
-							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/ClientApp_x86_Release-2013-03-27-16-44-43-79-300x100.png alt="Amalgamation">
-							</figure>
-							<div class="projectitem-column">
-								<p>Amalgamation is a 3d game engine and a multiplayer spaceship dogfighting game. Built from scratch together with 7 other students in 6 months using C++ and DirectX 11.</p>
 							</div>
 						</div>
 					</section>
@@ -166,7 +154,23 @@
 								<p>Vodi is an experimental platformer with malleable terrain and planetoid gravity.</p>
 							</div>
 						</div>
+					</section>	
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Amalgamation Game Engine (2013)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src="images/amalgamation_thumb.png" alt="Amalgamation">
+							</figure>
+							<div class="projectitem-column">
+								<p>Amalgamation is a 3d game engine and a multiplayer spaceship dogfighting game. Built from scratch together with 7 other students in 6 months using C++ and DirectX 11.</p>
+							</div>
+						</div>
 					</section>
+
 					
 					<!-- Section -->
 					<section class="projectitem-section">
@@ -175,13 +179,14 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/cheeseburg-300x100.png alt="Amalgamation">
+								<img src="images/cheeseboy_thumb.png" alt="The Little Cheese Boy">
 							</figure>
 							<div class="projectitem-column">
 								<p>A charming Pac-Man homage made together with 5 other students. Developed with cross-platform in mind and is currently playable on Windows, OSX and Linux.</p>
 							</div>
 						</div>
 					</section>
+					
 					
 					<!-- Section -->
 					<section class="projectitem-section">
@@ -190,7 +195,7 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/animats-300x100.png alt="Amalgamation">
+								<img src="images/animats_thumb.png" alt="Animats">
 							</figure>
 							<div class="projectitem-column">
 								<p>An experiment with simplified virtual lifeforms that pathfind based on positive and negative fields and some simple rules.</p>
@@ -201,15 +206,30 @@
 					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
-							<h2>Io - 3d Puzzle Platformer with Isosurfaces (2012)</h2>
+							<h2>Io - 3d Puzzle Platformer (2011)</h2>
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/io_site_header-300x100.jpg alt="Amalgamation">
+								<img src="images/io_thumb.jpg" alt="Io">
 							</figure>
 							<div class="projectitem-column">
-								<p>In Io you are tasked with solving puzzles using digital clay.</p>
+								<p>Io was developed together with 2 other students. In Io you are tasked with solving puzzles using digital clay.</p>
 								<p>The player can add or subtract clay in certain volumes of space.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Rendering - Implementation of Deferred Shading Techniques (2011)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src="images/render_thumb.png" alt="Rendering">
+							</figure>
+							<div class="projectitem-column">
+								<p>Implementation of several common deferred shading techniques using MRT structures. This was a project in which I explored various post processing effects possible when using deferred rendering. It was implemented in C++ and DirectX11.</p>
 							</div>
 						</div>
 					</section>
@@ -221,7 +241,7 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/image4_boss_battle-300x100.png alt="Amalgamation">
+								<img src="images/soulhunter_thumb.png" alt="SoulHunter">
 							</figure>
 							<div class="projectitem-column">
 								<p>SoulHunter is a 3d adventure game with sword-based hack- and slash combat. The main protagonist of the game, is kind of an anti-hero, a wretched creature that has lost its own soul.</p>
@@ -238,7 +258,7 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/6-300x100.jpg alt="Amalgamation">
+								<img src="images/hyperion_thumb.jpg" alt="Hyperion">
 							</figure>
 							<div class="projectitem-column">
 								<p>A simple platformer developed in C++ using SDL for Windows and the handheld GP2X.</p>
@@ -254,27 +274,29 @@
 						<h1>Game Jams</h1>
 					</header>
 					
+					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
 							<h2>Monstrous (2015)</h2>
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/6d881b20bae2e9ffede8e4202d8d7850.jpg alt="Fractal">
+								<img src="images/monstrous_thumb.jpg" alt="Monstrous">
 							</figure>
 							<div class="projectitem-column">
-								<p>Not much of a game, but more like a small experiment. Monstrous is a Black & White inspired little monster simulator. </p>
+								<p>Not much of a game, but more like a small experiment. Monstrous is a Black & White-inspired monster simulator. </p>
 							</div>
 						</div>
 					</section>
 					
+					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
 							<h2>Up & Away! (2015)</h2>
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/fe5a96d7ffbe7c2adfea83376ccaf25b.jpg alt="Fractal">
+								<img src="images/upandaway_thumb.jpg" alt="Up & Away!">
 							</figure>
 							<div class="projectitem-column">
 								<p>Guide the little monster to the top of the tree.</p>
@@ -283,6 +305,7 @@
 						</div>
 					</section>
 					
+					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
 							<h2>Arms Race (2015)</h2>
@@ -298,13 +321,14 @@
 						</div>
 					</section>
 					
+					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
 							<h2>Super Baby Seal Revenge (2015)</h2>
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/3f123debda2d39e07eaf06f036987117.jpg alt="Fractal">
+								<img src="images/babyseal_thumb.jpg" alt="Super Baby Seal Revenge">
 							</figure>
 							<div class="projectitem-column">
 								<p>The roles are reversed in this game, where you, as a baby seal, go on a rampage and club down some nasty seal clubbers!</p>
@@ -313,13 +337,14 @@
 						</div>
 					</section>
 					
+					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
 							<h2>The Gorghast (2014-Ongoing)</h2>
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://ludumdare.com/compo/wp-content/compo2//394584/11939-shot0.png-eq-900-500.jpg alt="Fractal">
+								<img src="images/gorghast_thumb.jpg" alt="Gorghast">
 							</figure>
 							<div class="projectitem-column">
 								<p>The horrible Gorghast is decimating the population, and you have to help it! >:D</p>
@@ -336,7 +361,7 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/870b7d32d9740068e14a186e9c3a708a.jpg alt="Fractal">
+								<img src="images/omnis_thumb.jpg" alt="Omnis">
 							</figure>
 							<div class="projectitem-column">
 								<p>A reversed god-sim? Destroy the evil deity by hindering its worshippers to pray to it. Only by severing their connection to it may you succeed.</p>
@@ -345,13 +370,31 @@
 						</div>
 					</section>
 					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Whale Whale West (2014)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src="images/www_thumb.png" alt="Whale Whale West">
+							</figure>
+							<div class="projectitem-column">
+								<p>Whale Whale West was developed in 40 hours for a local game jam by me and a friend of mine.</p>
+								<p>It is an infinite runner type of game in which the player is being chased by a steam powered desert whale.</p>
+								<p>Won 1st place at BossJam 2014.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
 							<h2>Apotheosis (2013)</h2>
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://ludumdare.com/compo/wp-content/compo2/thumb/6794d35b9a57a70bc65fbf3558715c69.jpg alt="Fractal">
+								<img src="images/apotheosis_thumb.png" alt="Apotheosis">
 							</figure>
 							<div class="projectitem-column">
 								<p>Combine Mario Bros and Braid and this is what you get.</p>
@@ -360,13 +403,30 @@
 						</div>
 					</section>
 					
+					<!-- Section -->
+					<section class="projectitem-section">
+						<header>
+							<h2>Dearth of Ideas (2013)</h2>
+						</header>
+						<div class="projectitem-body">
+							<figure class="projectitem-fig">
+								<img src="images/dearthofideas_thumb.jpg" alt="Dearth of Ideas">
+							</figure>
+							<div class="projectitem-column">
+								<p>You control the ego, equipped with a handy umbrella. Use the umbrella to protect the Id, by catching good ideas and repelling bad ideas.</p>
+								<p>Made in 24 hours together with 2 other students. Won 1st place at BossJam 2013.</p>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
 							<h2>Amongst The Uncommon (2013)</h2>
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2014/04/screen7_0-e1404857960757-300x100.jpg alt="Fractal">
+								<img src="images/uncommon_thumb.jpg" alt="Amongst The Uncommon">
 							</figure>
 							<div class="projectitem-column">
 								<p>Paintball-shooting robot shamans come together to play some hardcore paintball. Use the awesome power of paintballs to convert the creatures of the world to your side, and use them to crush your opponents.</p>
@@ -374,13 +434,14 @@
 						</div>
 					</section>
 					
+					<!-- Section -->
 					<section class="projectitem-section">
 						<header>
 							<h2>The Tiny Gryphalope (2012)</h2>
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2014/04/vlcsnap-2012-07-04-14h46m13s127-e1405043126905-300x100.png alt="Fractal">
+								<img src="images/gryphalope_thumb.png" alt="The Tiny Gryphalope">
 							</figure>
 							<div class="projectitem-column">
 								<p>This game marks my Ludum Dare debut! It is a take on shoot-â€™em-ups such as Space Harrier and Panzer Dragoon.</p>
