@@ -18,6 +18,11 @@
   src: url(../fonts/NewsCycle-Regular.ttf);
 }
 
+@font-face {
+  font-family: FiraSans;
+  src: url(../fonts/FiraSans-Regular.ttf);
+}
+
 /* ----------- */
 
 html {
@@ -27,7 +32,7 @@ html {
 
 body {
 	/*font-family: NewsCycle,Arial,sans-serif;*/
-	font-family: 'Fira Sans', sans-serif;
+	font-family: FiraSans, sans-serif;
 	color: #c4c4c4;
 	/*color: #303030;*/
 	margin: 0 0 0 0;
