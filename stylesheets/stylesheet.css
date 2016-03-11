@@ -98,13 +98,13 @@ div.intro-end hr {
 div.article-column {
 	width: 90%;
 	margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 div.subarea {
 	text-align: center;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 30px;
 }
 
 /* 
@@ -168,6 +168,11 @@ section.videos-section {
 	width: 700px;
 	margin: auto;
 	/*background: black;*/
+}
+
+section.videos-section h2 {
+	font-family: OpenSans,sans-serif;
+	font-size: 18pt;
 }
 
 /* 
@@ -276,8 +281,9 @@ div.games-column {
 footer{
 	font-size: 10pt;
 	font-style:italic;
-	color: #d8d8d8;
+	color: #a8a8a8;
 	padding: 10px;
+	padding-left: 30px;
 	background-color: #1d1d1d;
 }
 
