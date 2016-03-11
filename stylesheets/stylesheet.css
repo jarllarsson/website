@@ -21,14 +21,17 @@
 /* ----------- */
 
 html {
-	background-color: #ffffff;
+	background-color: #28272D;
 	overflow-y: scroll; 
 }
 
 body {
-	font-family: NewsCycle,Arial,sans-serif;
-	color: #d0d0d0;
+	/*font-family: NewsCycle,Arial,sans-serif;*/
+	font-family: 'Fira Sans', sans-serif;
+	color: #c4c4c4;
+	/*color: #303030;*/
 	margin: 0 0 0 0;
+	font-size: 10pt;
 }
 
 body a{
@@ -37,23 +40,29 @@ body a{
 }
 
 body a:hover{
-	color: #ffffff;
+	color: #9600d7;
 	text-decoration:underline;
 }
 
 h1 {
-    border-bottom: 2px solid #2C2C2C;
+    border-bottom: 2px solid rgba(105, 19, 220, 0.35);
     font-family: OpenSans,sans-serif;
     font-size: 30px;
 }
 
-div#content {
-	background: #fdfdfd;
+body hr {
+	/*border-style: dashed;*/
+	border-style: line;
+	border-color: rgba(247, 87, 247, 0.34);
 }
 
-body hr {
-    border-style: dashed;
-    color: #151515;
+div.intro-end hr {
+	margin-bottom: 10px;
+}
+
+div.intro-end hr {
+	border-style: line;
+	border-color: rgba(247, 0, 247, 0.34);
 }
 
 .right{
@@ -86,6 +95,18 @@ body hr {
 	width: 100%;
 }
 
+div.article-column {
+	width: 90%;
+	margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+div.subarea {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 /* 
 	============================
 	Article
@@ -107,13 +128,18 @@ section.article-section {
 }
 
 header.article-header {
-
+	text-align: left;
 }
 
 aside.article-aside {
 	float:left;
 	margin-right: 20px;
 	background-color: #000000;
+}
+
+figure.logo-fig {
+	margin-left: 0px;
+	margin-top: 30px;
 }
 
 figure.article-fig {
@@ -160,11 +186,19 @@ section.projects-section {
 }
 
 section.projects-section h1{
-    border-bottom: 2px solid #2C2C2C;
+    border-bottom: 2px solid #4F41CA;
     font-family: OpenSans,sans-serif;
     font-size: 17pt;
 	margin: 1px;
 	margin-bottom: 5px;
+}
+
+section.projects-section h1#personal{
+    border-bottom: 2px solid #6DA583;
+}
+
+section.projects-section h1#jams{
+    border-bottom: 2px solid #A58650;
 }
 
 section.projects-section h2{
@@ -175,7 +209,8 @@ section.projects-section h2{
 }
 
 section.projectitem-section {
-	background: rgba(0,0,0,0.7);
+	color: #d0d0d0;
+	background: rgba(0, 0, 0, 0.29);
 	margin-bottom: 40px;
 	width: 300px;
 	/*height: 250px;*/
@@ -206,7 +241,7 @@ figure.projectitem-fig {
 div.projectitem-column {
 	/*flex: 1;
 	background: rgba(0,0,0,0.9);*/
-	font-size: 10pt;
+	font-size: 9pt;
 	margin: 0px;
 	padding-top: 3px;
 	padding-left: 3px;
@@ -241,7 +276,13 @@ div.games-column {
 footer{
 	font-size: 10pt;
 	font-style:italic;
-	background-color: #000000;
+	color: #d8d8d8;
+	padding: 10px;
+	background-color: #1d1d1d;
+}
+
+footer.list{
+	list-style-type: circle;
 }
 
 footer.byline {
@@ -316,25 +357,6 @@ body#source header#main-header {
 .main-header-height {
 	height:300px;
 }
-	
-div#banner {	
-	width:100%;
-	background-color: transparent;
-	/* Gradient generated using  http://www.colorzilla.com/gradient-editor */
-	/* IE9 SVG */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iOTglIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=); /* OMG! */
-	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 2%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 98%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(2%,rgba(0,0,0,1)), color-stop(10%,rgba(0,0,0,0)), color-stop(90%,rgba(0,0,0,0)), color-stop(98%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 2%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 90%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 2%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 90%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 2%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 90%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* IE10+ */
-	background: linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 2%,rgba(0,0,0,0) 10%,rgba(0,0,0,0) 90%,rgba(0,0,0,1) 98%,rgba(0,0,0,1) 100%); /* W3C */
-	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );*/ /* IE6-8 */
-	/* -------------------------- */
-	/* Uff, CSS3 behöver nog lite mer tid... */
-
-}
-
 
 
 header.img#logo {

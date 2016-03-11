@@ -3,55 +3,21 @@
 <html lang="sv">
 	<head>
 		<meta charset="utf-8">
-		<title>Min Me-sida om mig sjÃ¤lv</title>
-		<link rel="shortcut icon" href="images/favicon_glider.ico">
+		<title>Game development portfolio of Jarl Larsson</title>
+		<!--<link rel="shortcut icon" href="images/favicon.ico">-->
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
 		<!-- links to external stylesheets -->
 		<link type="text/css" rel="stylesheet" href="stylesheets/stylesheet.css" title="General stylesheet"> 
-		<link type="text/css" rel="alternate stylesheet" href="stylesheets/old_stylesheet.css" title="Ye olde stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+		<!--<link type="text/css" rel="alternate stylesheet" href="stylesheets/old_stylesheet.css" title="Ye olde stylesheet">-->
 		<!-- PHP conditional that adds a page-defined stylesheet if defined -->
 	</head>
 	
 	<!-- Body id dependant on selected page -->
 	<body  id='me' >
-	
-		<!-- Above header
-		<header id="above-header" class="scale banner-width page-header">		   
-		  <nav class='login'><a href='login.php?page=login'>login</a> </nav>
-		  <nav class="related">
-			<a href="../kmom01/me.php">kmom01</a>
-			<a href="../kmom02/me.php">kmom02</a>
-			<a href="../kmom03/me.php">kmom03</a>
-			<a href="../kmom04/me.php">kmom04</a>
-			<a href="../kmom05/me.php">kmom05</a>
-			<a href="me.php">kmom06</a>
-		  </nav>
-		</header> -->
-		
-		<!-- Header 
-		<header id="main-header" class="scale banner-width main-header-height page-header">
-			<div id="banner" class="scale banner-width main-header-height" >
-			</div>
-
-			<div class="scale">
-				<div class="scale" id="header-overlay">
-					<img id="logo" src="images/logo.png" alt="htmlphp logo" width=318 height=97>
-
-					<nav class="navmenu">
-						<a id="me-" 	href="me.php">Me</a>
-						<a id="report-" href="report.php">Report</a>
-						<a id="php-" 	href="test.php">PHP</a>
-						<a id="ebaj-" 	href="eBaj2.php">eBaj</a>
-						<a id="style-" 	href="style.php">Style</a>
-						<a id="source-" href="viewsource.php">Source</a>
-					</nav>	
-				</div>
-			</div>
-		</header>-->
-
 
 	<!-- Main content -->
 	<div id="content">
@@ -63,34 +29,39 @@
 				<section id="intro-body" class="intro-section">
 					<!-- Article header -->
 					<header class="article-header">
-						<h1>Om mig</h1>
-					</header>
-					
-					<!--<aside class="article-aside">
-						<figure class="article-fig" id="f1">
-							<img src="images/me.jpg" alt="Bild på Jarl Larsson">
-							<figcaption>En person i behov av kaffe.</figcaption>
+						<!--<h1>Jarl Larsson</h1>-->
+						<figure class="logo-fig">
+							<img src="images/logo.png" alt="Logo">
 						</figure>
-					</aside>-->
+					</header>
+
 					<div class="article-column">
 						<p>My name is Jarl Larsson and I like to make video games, and stuff like that.</p>
-						<p>I recently finished my Master of Engineering in Game- and Software Engineering and I'm currently employed as a programmer at Image & Form, were we create (only) awesome games for almost every platform imaginable.</p>
-						<p>On this site you'll find some of my personal and academic projects, enjoy!</p>
+						<p>I recently finished my Master of Engineering in Game- and Software Engineering and I'm currently employed as a programmer at <a href="imageform.se">Image & Form Games</a>, were we create (only) awesome games for almost every platform imaginable.</p>
+						<p>Below I've listed some of my personal and academic projects, enjoy!</p>
 					</div>
+					
 					
 					<section id="videos-section" class="videos-section">
 						<header>
 							<h2>Video Reel</h2>
 						</header>
 						<iframe width="700" height="394" src="https://www.youtube.com/embed/gLzcyWSxTnE?list=PLI8xkPPG20mdyaLiMmyQwYTZPNKZSPAP1&showinfo=1" frameborder="0" allowfullscreen></iframe>
+						<div class="subarea"><a href="http://youtube.com/bytegrove">Video portfolio</a></div>
 					</section>		
 				</section>
+				
+				
+				
 				
 				<section id="projects-section" class="projects-section">
 				<div class="project-column">
 					<header>
-						<h1>Academic- & Personal Projects</h1>
+						<h1 id="personal">Academic- & Personal Projects</h1>
 					</header>
+				
+					<div class="subarea"><a href="http://github.com/jarllarsson">>Click here to access my projects on GitHub<</a></div>
+					
 				
 					<!-- Section -->
 					<section class="projectitem-section">
@@ -148,7 +119,7 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://bytegrove.com/wordpress/wp-content/uploads/2013/10/BKvBaXACAAE2pKS-460x350.png alt="Amalgamation">
+								<img src="images/vodi_thumb.jpg" alt="Amalgamation">
 							</figure>
 							<div class="projectitem-column">
 								<p>Vodi is an experimental platformer with malleable terrain and planetoid gravity.</p>
@@ -271,8 +242,10 @@
 					
 				<div class="games-column">
 					<header>
-						<h1>Game Jams</h1>
+						<h1 id="jams">Game Jams</h1>
 					</header>
+					
+					<div class="subarea"><a href="http://ludumdare.com/compo/author/bytegrove/">>Click here to see all my Ludum Dare entries<</a></div>
 					
 					<!-- Section -->
 					<section class="projectitem-section">
@@ -312,7 +285,7 @@
 						</header>
 						<div class="projectitem-body">
 							<figure class="projectitem-fig">
-								<img src=http://ludumdare.com/compo/wp-content/uploads/2015/04/carperson-300x159.png alt="Fractal">
+								<img src="images/arms_race_thumb.jpg" alt="Arms Race">
 							</figure>
 							<div class="projectitem-column">
 								<p>Unfinished kart racer, with 4-seat multiplayer and single player modes.</p>
@@ -413,7 +386,7 @@
 								<img src="images/dearthofideas_thumb.jpg" alt="Dearth of Ideas">
 							</figure>
 							<div class="projectitem-column">
-								<p>You control the ego, equipped with a handy umbrella. Use the umbrella to protect the Id, by catching good ideas and repelling bad ideas.</p>
+								<p>You control the ego, equipped with a handy umbrella. Use the umbrella to protect the id, by catching good ideas and repelling bad ideas.</p>
 								<p>Made in 24 hours together with 2 other students. Won 1st place at BossJam 2013.</p>
 							</div>
 						</div>
@@ -462,32 +435,15 @@
 
 
 	<!-- Footer -->
-	<footer class="scale byline">
-		<hr />	
-		<figure class="right top">
-			<img src="images/orangutan.jpg" alt="Orangutang med monokel och hatt">
-		</figure>
-		<p>Jarl Larsson studerar till civilingenjör inom spel- och programvaruteknik på BTH.<br /> Huvudintresserna är programmering, modellering, animation och målning.</p>
-	</footer>
 	<footer id="bottom" class="scale">
-		<hr />
-		<p>Verktyg:
-			<a href="http://validator.w3.org/check/referer">HTML5</a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS3</a>
-			<a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a>
-			<a href="http://validator.w3.org/i18n-checker/check?uri=http://bytegrove.com/bth/kmom06/me.php">i18n</a>
-			<a href="http://validator.w3.org/checklink?uri=http://bytegrove.com/bth/kmom06/me.php">Links</a>
-			<a href="viewsource.php">Källkod</a>
+		<p>Links:
+		<ul>
+			<li><a href="http://youtube.com/bytegrove">Youtube</a></li>
+			<li><a href="http://ludumdare.com/compo/author/bytegrove/">Ludum Dare</a></li>
+			<li><a href="http://github.com/jarllarsson">Github</a></li>
+			<li><a href="http://imageform.se">Image & Form Games</a></li>
+		</ul>
 		</p>
-		<p>Manualer:
-			<a href="http://www.w3.org/2009/cheatsheet/">Cheatsheet</a>
-			<a href="http://dev.w3.org/html5/spec/spec.html">HTML5</a> 
-			<a href="http://www.w3.org/TR/CSS2/">CSS2</a> 
-			<a href="http://www.w3.org/Style/CSS/current-work#CSS3">CSS3</a> 
-			<a href="http://php.net/manual/en/index.php">PHP</a> 
-		</p>
-		<p>Sidan genererades på 0.00965 sekunder</p>
 	</footer>
 
 </body>
