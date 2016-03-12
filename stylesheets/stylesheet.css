@@ -19,8 +19,23 @@
 }
 
 @font-face {
-  font-family: FiraSans;
-  src: url(../fonts/FiraSans-Regular.ttf);
+  font-family: DroidSans;
+  src: url(../fonts/DroidSans.ttf);
+}
+
+@font-face {
+  font-family: FiraSansMedium;
+  src: url(../fonts/FiraSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: SourceSansPro-Semibold;
+  src: url(../fonts/SourceSansPro-Semibold.ttf);
+}
+
+@font-face {
+  font-family: SourceSansPro-Bold;
+  src: url(../fonts/SourceSansPro-Bold.ttf);
 }
 
 /* ----------- */
@@ -32,7 +47,7 @@ html {
 
 body {
 	/*font-family: NewsCycle,Arial,sans-serif;*/
-	font-family: FiraSans, sans-serif;
+	font-family: DroidSans, sans-serif;
 	color: #c4c4c4;
 	/*color: #303030;*/
 	margin: 0 0 0 0;
@@ -40,7 +55,7 @@ body {
 }
 
 body a{
-	color: #999999;
+	color: #E2DFB7;
 	text-decoration:none;
 }
 
@@ -51,7 +66,7 @@ body a:hover{
 
 h1 {
     border-bottom: 2px solid rgba(105, 19, 220, 0.35);
-    font-family: OpenSans,sans-serif;
+    font-family: FiraSansMedium, sans-serif;
     font-size: 30px;
 }
 
@@ -176,7 +191,7 @@ section.videos-section {
 }
 
 section.videos-section h2 {
-	font-family: OpenSans,sans-serif;
+	font-family: SourceSansPro-Bold, sans-serif;
 	font-size: 18pt;
 }
 
@@ -197,8 +212,8 @@ section.projects-section {
 
 section.projects-section h1{
     border-bottom: 2px solid #4F41CA;
-    font-family: OpenSans,sans-serif;
-    font-size: 17pt;
+    font-family: SourceSansPro-Bold, sans-serif;
+    font-size: 16pt;
 	margin: 1px;
 	margin-bottom: 5px;
 }
@@ -211,10 +226,14 @@ section.projects-section h1#jams{
     border-bottom: 2px solid #A58650;
 }
 
+section.projects-section header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 section.projects-section h2{
-    border-bottom: 2px solid #2C2C2C;
-    font-family: OpenSans,sans-serif;
-    font-size: 12pt;
+    font-family: SourceSansPro-Bold, sans-serif;
+    font-size: 14pt;
 	margin: 1px;
 }
 
@@ -254,15 +273,30 @@ div.projectitem-column {
 	font-size: 9pt;
 	margin: 0px;
 	padding-top: 3px;
-	padding-left: 3px;
+    padding-left: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
 	/*position: absolute; */
 	bottom: 0px; 
 	left: 0; 
 }
 
+
+div.projectitem-column a{
+	color: #CC687E;
+}
+
+div.projectitem-column a:hover{
+	color: #09ffb5;
+}
+
+section.projects-section h2 {
+    padding-left: 6px;
+}
+
 div.projectitem-column p {
 	margin-top: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 div.project-column {
@@ -290,6 +324,10 @@ footer{
 	padding: 10px;
 	padding-left: 30px;
 	background-color: #1d1d1d;
+}
+
+footer a{
+	color: #a8a8a8;
 }
 
 footer.list{
